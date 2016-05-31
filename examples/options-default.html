@@ -6,25 +6,26 @@
     <link href="../dist/css/perfect-scrollbar.css" rel="stylesheet">
     <script src="../dist/js/perfect-scrollbar.js"></script>
     <style>
-      .contentHolder { position:relative; margin:0px auto; padding:0px; width: 600px; height: 400px; overflow: auto; }
-      .contentHolder .content { background-image: url('./azusa.jpg'); width: 1280px; height: 720px; }
+      body { background-color: #222; }
+      .contentHolder { position:relative; margin:0px auto; padding:0px; width: 1000px; max-height: 600px; overflow: auto; overflow-x: hidden;}
       .spacer { text-align:center }
     </style>
   </head>
   <body>
     <div id="Default" class="contentHolder">
-      <div class="content">
-      </div>
+      <img src="./ct.jpg" width="1000px"/>
     </div>
-    <p style='text-align: center'>
+    <!-- <p style='text-align: center'>
       Width <input type='text' id='width' value='600'>
       Height <input type='text' id='height' value='400'>
       <button onclick='updateSize()'>Change!</button>
-    </p>
+    </p> -->
     <script>
       var $ = document.querySelector.bind(document);
       window.onload = function () {
-        Ps.initialize($('#Default'));
+        Ps.initialize($('#Default'), {
+          
+        });
       };
       var updateSize = function () {
         var width = parseInt($('#width').value, 10);
@@ -37,4 +38,3 @@
     </script>
   </body>
 </html>
-

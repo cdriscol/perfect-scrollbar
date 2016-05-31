@@ -6,11 +6,12 @@ $ps-rail-container-hover-opacity: 0.6 !default;
 $ps-rail-hover-opacity: 0.9 !default;
 
 $ps-bar-bg: transparent !default;
-$ps-bar-container-hover-bg: #aaa !default;
-$ps-bar-hover-bg: #999 !default;
-$ps-rail-hover-bg: #eee !default;
+$ps-bar-container-hover-bg: #222 !default;
+$ps-bar-hover-bg: #222 !default;
+$ps-rail-hover-bg: #ccc !default;
 
 // Sizes
+$ps-size-scale-hover: 1.5;
 $ps-scrollbar-x-rail-bottom: 3px !default;
 $ps-scrollbar-x-rail-height: 8px !default;
 $ps-scrollbar-x-bottom: 0 !default;
